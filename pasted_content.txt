@@ -1,0 +1,140 @@
+PROJETO: Criação de Website Institucional para "Cápsula - Plataforma de Preservação de Memórias"
+
+OBJETIVO GERAL: Desenvolver um website moderno, emocionalmente envolvente e funcional para apresentar a plataforma Cápsula, atrair novos usuários e incentivar o registro de memórias.
+
+PÚBLICO-ALVO: Pessoas de todas as idades que valorizam suas memórias, buscam uma forma segura e afetiva de guardá-las e desejam revivê-las no futuro ou compartilhá-las.
+
+TOM DE VOZ: Acolhedor, empático, inspirador e confiável.
+
+---
+
+1.  **IDENTIDADE VISUAL E BRANDING**
+
+    *   **Nome da Marca:** Cápsula
+    *   **Slogan Principal:** Suas memórias vivas para sempre.
+    *   **Paleta de Cores:**
+        *   **Primária 1 (Azul Principal):** #2C3E50 (Azul Marinho Sólido)
+        *   **Primária 2 (Azul Secundário):** #3498DB (Azul Céu Vibrante)
+        *   **Neutro 1 (Cinza Suave):** #ECF0F1 (Cinza Claro)
+        *   **Neutro 2 (Cinza Escuro):** #7F8C8D (Cinza Médio)
+        *   **Destaque 1 (Amarelo/Ouro):** #F39C12 (Amarelo Vibrante/Dourado)
+        *   **Destaque 2 (Rosa/Pêssego):** #FFDAB9 (Pêssego Suave)
+    *   **Tipografia:**
+        *   **Títulos/Headlines (H1, H2, H3):** Lato Bold
+        *   **Corpo de Texto (P):** Lato Regular
+        *   **Botões/CTAs:** Lato Bold
+    *   **Estilo de Ilustrações/Ícones:**
+        *   **Conceito:** Moderno, minimalista, com traços limpos.
+        *   **Estilo:** "Line art" (desenhos de linha) ou "Flat design" com elementos 3D sutis.
+        *   **Cores:** Utilizar as cores da paleta, especialmente o Azul Principal, Azul Secundário e Destaque 1.
+
+---
+
+2.  **ESTRUTURA E CONTEÚDO DAS SEÇÕES DO WEBSITE**
+
+    Apresentar as seções em ordem, com seus respectivos títulos, slogans, descrições, textos de CTAs e conceitos de ilustrações/ícones.
+
+    ---
+
+    **2.1. Hero Section (Seção Principal)**
+
+    *   **Headline (H1):** Suas memórias. Seus tesouros. Guardados para sempre.
+    *   **Sub-headline (P):** Cápsula: a plataforma para eternizar momentos e reviver emoções com texto, áudio e imagem.
+    *   **Botão CTA Principal:** Teste Agora Gratuitamente!
+    *   **Botão CTA Secundário (Opcional):** Quero preservar minhas memórias
+    *   **Conceito de Imagem/Vídeo:** Uma pessoa (sorrindo, feliz) interagindo com um dispositivo (celular/tablet) que exibe fotos, textos ou um espectro de áudio. Cenário acolhedor, com luz suave, transmitindo paz e nostalgia positiva. Pode ser um vídeo curto mostrando cenas de memórias sendo registradas e revividas.
+
+    ---
+
+    **2.2. Seção: Benefícios/Emoções**
+
+    *   **Título (H2):** Por que Cápsula? Vá além do simples registro.
+    *   **Slogan (H3):** Transforme suas lembranças em legados.
+    *   **Descrição Introdutória (P):** Cápsula é mais do que um aplicativo; é a sua garantia de que as histórias que importam não se perdem. Veja como ele ressoa com suas emoções mais profundas:
+    *   **Bloco 1: Gravando Emoções Vivas**
+        *   **Frase Marcante:** Grave os risos, os abraços e as palavras que marcaram sua vida.
+        *   **Descrição Opcional:** Capture a essência de cada instante. Desde o tom da voz de quem você ama até a beleza de um sorriso, registre tudo em texto, áudio e imagem, garantindo que nada se perca no tempo.
+        *   **Conceito de Ilustração/Ícone:** Microfone estilizado ou câmera filmando com balões de fala/corações.
+    *   **Bloco 2: Cápsulas do Tempo Digitais**
+        *   **Frase Marcante:** Crie cápsulas do tempo digitais: reveja fotos, ouça áudios, volte no tempo sempre que sentir saudade.
+        *   **Descrição Opcional:** Tenha um portal particular para suas lembranças mais queridas. Acesse suas memórias a qualquer momento e em qualquer lugar, revivendo a emoção e a alegria de momentos especiais como se fosse hoje.
+        *   **Conceito de Ilustração/Ícone:** Cápsula do tempo sendo aberta, revelando ícones de fotos, notas musicais, etc.
+    *   **Bloco 3: Preservando sua História**
+        *   **Frase Marcante:** Evite perder detalhes preciosos de sua história. Com o Capsula, cada memória é para sempre.
+        *   **Descrição Opcional:** Garanta que seu legado pessoal e os momentos inesquecíveis da sua jornada estejam sempre protegidos e organizados. O Cápsula é o seu guardião digital de tudo o que importa.
+        *   **Conceito de Ilustração/Ícone:** Mão segurando um livro ou pergaminho, com estrelas/brilhos.
+
+    ---
+
+    **2.3. Seção: Sobre o Capsula**
+
+    *   **Título (H2):** O que é o Cápsula?
+    *   **Slogan em Destaque (H3):** Suas memórias vivas para sempre.
+    *   **Descrição (P):** Cápsula é a sua plataforma pessoal para eternizar os momentos que moldam a sua história. Permite que você **registre seus relatos em texto, áudio e imagem**, capturando a riqueza de cada experiência. Diferente de um diário comum, aqui suas memórias são **organizadas de forma intuitiva por emoções e temas**, facilitando a busca e a redescoberta. Seja para guardar grandes conquistas, superar desafios, reviver viagens inesquecíveis, celebrar momentos em família ou simplesmente registrar o dia a dia, o Cápsula transforma cada lembrança em um tesouro acessível.
+
+    ---
+
+    **2.4. Seção: Como Funciona**
+
+    *   **Título (H2):** Como o Cápsula Facilita a Preservação
+    *   **Slogan (H3):** Guardar suas lembranças é mais fácil do que você imagina.
+    *   **Passo 1: Capture Sua Memória**
+        *   **Texto:** Registre seus momentos em texto, grave áudios ou adicione fotos e vídeos. A forma de guardar é você quem escolhe!
+        *   **Conceito de Ilustração/Ícone:** Ícone de caneta/teclado, microfone e câmera/galeria de fotos.
+    *   **Passo 2: Organize com Significado**
+        *   **Texto:** Classifique suas memórias por emoções (alegria, saudade, superação) ou temas (viagens, família, conquistas) para encontrá-las facilmente.
+        *   **Conceito de Ilustração/Ícone:** Ícone de nuvem de tags ou pastas organizadas por emojis/cores.
+    *   **Passo 3: Reviva e Compartilhe**
+        *   **Texto:** Acesse suas cápsulas a qualquer momento e em qualquer lugar, e reviva ou compartilhe suas histórias com quem você ama.
+        *   **Conceito de Ilustração/Ícone:** Ícone de "play" ou olho com uma linha do tempo, e um ícone de compartilhamento.
+
+    ---
+
+    **2.5. Seção: Depoimentos**
+
+    *   **Título (H2):** Quem usa, recomenda.
+    *   **Slogan (H3):** Veja o que nossos usuários estão dizendo sobre o Cápsula.
+    *   **Depoimento 1:**
+        *   **Citação:** "Guardei a voz da minha avó contando histórias. Agora, posso ouvi-la sempre que bater saudade."
+        *   **Crédito:** Ana Paula G., 34 anos, Designer - Belo Horizonte, MG.
+    *   **Depoimento 2:**
+        *   **Citação:** "O Cápsula transformou meu diário em um verdadeiro tesouro emocional.”
+        *   **Crédito:** João Marcelo S., 28 anos, Escritor - São Paulo, SP.
+
+    ---
+
+    **2.6. Seção: Call to Action (CTA)**
+
+    *   **Headline de Apelo/Urgência (H2):** As memórias se vão com o tempo. Preserve as suas hoje.
+    *   **Texto Descritivo (P):** Junte-se a milhares de pessoas que já transformaram seus momentos em lembranças vivas e acessíveis. Com o Cápsula, cada riso, cada abraço, cada conquista é guardada com carinho e segurança.
+    *   **Botão CTA Principal:** Teste Agora Gratuitamente!
+    *   **Botão CTA Secundário (Opcional):** Quero preservar minhas memórias
+
+    ---
+
+    **2.7. Footer (Rodapé)**
+
+    *   **Coluna 1: Logo e Descrição Curta**
+        *   **Texto:** Cápsula: Preserve suas memórias, reviva suas emoções.
+    *   **Coluna 2: Navegação Rápida**
+        *   **Título:** Navegação
+        *   **Links:** Home, Como Funciona, Recursos, Depoimentos, Contato. (Opcional: Blog, Perguntas Frequentes)
+    *   **Coluna 3: Contato e Redes Sociais**
+        *   **Título:** Conecte-se
+        *   **E-mail de Suporte:** contato@capsulaapp.com
+        *   **Redes Sociais:** (Prever ícones para Instagram, Facebook, Twitter, LinkedIn)
+    *   **Coluna 4: Legal e Termos**
+        *   **Título:** Informações Legais
+        *   **Links:** Termos de Uso, Política de Privacidade, Política de Cookies.
+    *   **Informações Finais:**
+        *   **Direitos Autorais:** © 2024 Cápsula App. Todos os direitos reservados.
+
+---
+
+**INSTRUÇÕES ADICIONAIS PARA A IA:**
+
+*   Gere a estrutura HTML/CSS base do site, seguindo as especificações de cores, tipografia e arranjo de conteúdo para cada seção.
+*   Incorpore o conteúdo textual fornecido, respeitando os níveis de cabeçalho (H1, H2, H3) e parágrafos (P).
+*   Sugira placeholders para as imagens/ilustrações com base nos conceitos descritos.
+*   Priorize um design responsivo, garantindo que o layout se adapte bem a diferentes tamanhos de tela (desktop, tablet, mobile).
+*   Mantenha a coerência visual e tonal em todo o site.
