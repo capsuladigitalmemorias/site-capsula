@@ -15,8 +15,10 @@ p {
     font-weight: 400; /* Lato Regular */
 }
 
+/* AJUSTADO: Largura máxima do conteúdo */
 .container {
     width: 80%;
+    max-width: 1440px; /* Aumentado para permitir mais colunas e dar mais espaço */
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -36,6 +38,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    max-width: 1440px; /* Alinhando com o container principal */
     margin: 0 auto;
 }
 
@@ -43,6 +46,12 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     color: #2C3E50;
+}
+
+.navbar-logo {
+    height: 1.2em; /* Ajuste conforme a altura do texto 'Cápsula' */
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 
 nav ul {
@@ -58,783 +67,6 @@ nav a {
 }
 
 /* Hero Section */
-.hero-section {
-    text-align: center;
-    padding: 4rem 0;
-}
-
-.hero-section h1 {
-    font-size: 3rem;
-    color: #2C3E50;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    color: #7F8C8D; /* Cinza Médio */
-}
-
-.cta-buttons {
-    margin-top: 2rem;
-}
-
-.btn {
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 700;
-    margin: 0 0.5rem;
-}
-
-.btn.primary {
-    background-color: #F39C12; /* Amarelo Vibrante/Dourado */
-    color: #FFFFFF;
-}
-
-.btn.secondary {
-    background-color: #3498DB; /* Azul Céu Vibrante */
-    color: #FFFFFF;
-}
-
-.hero-image-placeholder img {
-    margin-top: 3rem;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Benefits Section */
-.benefits-section {
-    background-color: #FFFFFF;
-    padding: 4rem 0;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.benefit-item {
-    text-align: center;
-}
-
-.icon-placeholder img {
-    margin-bottom: 1rem;
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-
-/* About Section */
-.about-section {
-    padding: 4rem 0;
-}
-
-/* How It Works Section */
-.how-it-works-section {
-    background-color: #FFFFFF;
-    padding: 4rem 0;
-}
-
-.steps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.step-item {
-    text-align: center;
-}
-
-/* Testimonials Section */
-.testimonials-section {
-    padding: 4rem 0;
-}
-
-.testimonials-carousel-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    overflow: hidden;
-}
-
-.testimonials-carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
-    gap: 1.5rem;
-}
-
-.testimonial-item {
-    min-width: calc(33.333% - 1rem);
-    flex: 0 0 calc(33.333% - 1rem);
-    background-color: #FFFFFF;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border-left: 5px solid #F39C12;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.testimonial-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.testimonial-item .quote {
-    font-size: 1.1rem;
-    font-style: italic;
-    margin-bottom: 1rem;
-    color: #2C3E50;
-}
-
-.testimonial-item .credit {
-    font-weight: 700;
-    color: #7F8C8D;
-    font-size: 0.9rem;
-}
-
-.carousel-controls {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.carousel-btn {
-    background-color: #F39C12;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.carousel-btn:hover {
-    background-color: #E67E22;
-}
-
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #BDC3C7;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.indicator.active {
-    background-color: #F39C12;
-}
-
-/* CTA Section */
-.cta-section {
-    background-color: #2C3E50;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 4rem 0;
-}
-
-.cta-section h2 {
-    color: #FFFFFF;
-}
-
-.cta-section p {
-    color: #ECF0F1;
-}
-
-/* Footer */
-footer {
-    background-color: #34495E;
-    color: #ECF0F1;
-    padding: 3rem 0;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.footer-col .logo {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.footer-col h4 {
-    color: #FFFFFF;
-}
-
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col a {
-    color: #ECF0F1;
-    text-decoration: none;
-}
-
-.social-icons a {
-    margin-right: 1rem;
-    display: inline-block;
-    transition: opacity 0.3s ease;
-}
-
-.social-icons a:hover {
-    opacity: 0.7;
-}
-
-.copyright {
-    text-align: center;
-    margin-top: 2rem;
-    border-top: 1px solid #7F8C8D;
-    padding-top: 1rem;
-}
-
-/* Hide the hamburger button on larger screens */
-.hamburger-button {
-    display: none;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    /* Navbar/Hamburger related styles */
-    nav {
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center;
-    }
-
-    nav ul {
-        display: none; 
-        flex-direction: column; 
-        position: absolute; 
-        top: 60px; 
-        left: 0;
-        width: 100%;
-        background-color: #FFFFFF; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 1rem 0;
-        border-top: 1px solid #E0E0E0;
-        z-index: 999; 
-    }
-    
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin: 0.5rem 0;
-    }
-
-    nav ul a {
-        display: block; 
-        padding: 0.8rem 1rem;
-        font-size: 1.1rem;
-        transition: background-color 0.3s ease;
-    }
-
-    nav ul a:hover {
-        background-color: #F8F8F8;
-    }
-
-    .hamburger-button {
-        display: block; 
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0.5rem;
-        position: relative; 
-        z-index: 1001; 
-        width: 40px; 
-        height: 40px; 
-    }
-
-    .hamburger-icon,
-    .hamburger-icon::before,
-    .hamburger-icon::after {
-        content: '';
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #2C3E50; 
-        transition: all 0.3s ease;
-        position: absolute; 
-        left: 50%; 
-        transform: translateX(-50%); 
-    }
-
-    .hamburger-icon {
-        top: 50%;
-        transform: translate(-50%, -50%); 
-    }
-
-    .hamburger-icon::before {
-        top: 0; 
-        transform: translateY(-8px) translateX(-50%); 
-    }
-
-    .hamburger-icon::after {
-        bottom: 0; 
-        transform: translateY(8px) translateX(-50%); 
-    }
-
-    .hamburger-button.active .hamburger-icon {
-        background-color: transparent; 
-    }
-
-    .hamburger-button.active .hamburger-icon::before {
-        transform: translateY(0) translateX(-50%) rotate(45deg);
-    }
-
-    .hamburger-button.active .hamburger-icon::after {
-        transform: translateY(0) translateX(-50%) rotate(-45deg);
-    }
-
-    /* NOVO: Ajuste para a seção de depoimentos em mobile */
-    .testimonial-item {
-        /* Garante que cada item de depoimento ocupe 100% da largura do contêiner em telas pequenas */
-        min-width: 100%; 
-        flex: 0 0 100%; 
-        box-sizing: border-box; /* Garante que o padding não cause overflow */
-    }
-    /* FIM NOVO */
-}
-
-/* Estilos para páginas legais */
-.legal-page {
-    padding: 4rem 0;
-    background-color: #FFFFFF;
-}
-
-.legal-page h1 {
-    color: #2C3E50;
-    margin-bottom: 1rem;
-}
-
-.legal-page h2 {
-    color: #2C3E50;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #F39C12;
-    padding-bottom: 0.5rem;
-}
-
-.legal-page h3 {
-    color: #34495E;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.legal-page .last-updated {
-    color: #7F8C8D;
-    font-style: italic;
-    margin-bottom: 2rem;
-}
-
-.legal-page ul {
-    margin-left: 1.5rem;
-}
-
-.legal-page li {
-    margin-bottom: 0.5rem;
-}
-
-/* Melhorias interativas para seções */
-.benefits-section {
-    background: linear-gradient(135deg, #FFFFFF 0%, #ECF0F1 100%);
-    padding: 4rem 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.benefits-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23F39C12" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
-    pointer-events: none;
-}
-
-.benefits-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(45deg, #2C3E50, #3498DB);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.benefits-section h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #7F8C8D;
-    margin-bottom: 2rem;
-}
-
-.benefit-item {
-    text-align: center;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.benefit-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(243, 156, 18, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.benefit-item:hover::before {
-    left: 100%;
-}
-
-.benefit-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 1);
-}
-
-.benefit-item .icon-placeholder {
-    transition: transform 0.3s ease;
-}
-
-.benefit-item:hover .icon-placeholder {
-    transform: scale(1.1) rotate(5deg);
-}
-
-.benefit-item h4 {
-    color: #2C3E50;
-    margin: 1rem 0;
-    font-size: 1.3rem;
-    transition: color 0.3s ease;
-}
-
-.benefit-item:hover h4 {
-    color: #F39C12;
-}
-
-/* Melhorias para seção "O que é o Cápsula?" */
-.about-section {
-    padding: 4rem 0;
-    background: linear-gradient(135deg, #ECF0F1 0%, #FFFFFF 100%);
-    position: relative;
-}
-
-.about-section::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #F39C12, #3498DB, #F39C12);
-}
-
-.about-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2C3E50;
-    position: relative;
-}
-
-.about-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, #F39C12, #3498DB);
-    border-radius: 2px;
-}
-
-.about-section h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #7F8C8D;
-    margin-bottom: 2rem;
-    font-style: italic;
-}
-
-.about-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-.about-section p::before {
-    content: '"';
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    font-size: 4rem;
-    color: #F39C12;
-    opacity: 0.3;
-    font-family: serif;
-}
-
-.about-section p::after {
-    content: '"';
-    position: absolute;
-    bottom: -30px;
-    right: 20px;
-    font-size: 4rem;
-    color: #3498DB;
-    opacity: 0.3;
-    font-family: serif;
-}
-
-.about-section strong {
-    color: #F39C12;
-    font-weight: 700;
-    padding: 2px 4px;
-    border-radius: 3px;
-    background: rgba(243, 156, 18, 0.1);
-}
-
-/* Animações */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.benefit-item {
-    animation: fadeInUp 0.6s ease forwards;
-}
-
-.benefit-item:nth-child(1) { animation-delay: 0.1s; }
-.benefit-item:nth-child(2) { animation-delay: 0.2s; }
-.benefit-item:nth-child(3) { animation-delay: 0.3s; }
-
-/* Responsividade melhorada */
-@media (max-width: 768px) {
-    .benefits-section h2,
-    .about-section h2 {
-        font-size: 2rem;
-    }
-    
-    .benefit-item {
-        padding: 1.5rem;
-    }
-    
-    .about-section p {
-        padding: 1.5rem;
-        font-size: 1rem;
-    }
-}
-
-
-/* Seção de Funcionalidades */
-.features-section {
-    background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
-    color: #FFFFFF;
-    padding: 4rem 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.features-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23F39C12" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>') repeat;
-    pointer-events: none;
-}
-
-.features-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #FFFFFF;
-    position: relative;
-    z-index: 1;
-}
-
-.features-section h3 {
-    text-align: center;
-    font-size: 1.3rem;
-    color: #ECF0F1;
-    margin-bottom: 3rem;
-    font-weight: 400;
-    position: relative;
-    z-index: 1;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-    position: relative;
-    z-index: 1;
-}
-
-.feature-item {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.feature-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(243, 156, 18, 0.2), transparent);
-    transition: left 0.6s ease;
-}
-
-.feature-item:hover::before {
-    left: 100%;
-}
-
-.feature-item:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.15);
-    border-color: #F39C12;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease;
-    position: relative;
-    z-index: 1;
-}
-
-.feature-item:hover .feature-icon {
-    transform: scale(1.2) rotate(10deg);
-}
-
-.feature-item h4 {
-    color: #FFFFFF;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s ease;
-}
-
-.feature-item:hover h4 {
-    color: #F39C12;
-}
-
-.feature-item p {
-    color: #ECF0F1;
-    line-height: 1.6;
-    position: relative;
-    z-index: 1;
-}
-
-/* Animações escalonadas para os itens */
-.feature-item {
-    opacity: 0;
-    animation: slideInUp 0.6s ease forwards;
-}
-
-.feature-item:nth-child(1) { animation-delay: 0.1s; }
-.feature-item:nth-child(2) { animation-delay: 0.2s; }
-.feature-item:nth-child(3) { animation-delay: 0.3s; }
-.feature-item:nth-child(4) { animation-delay: 0.4s; }
-.feature-item:nth-child(5) { animation-delay: 0.5s; }
-.feature-item:nth-child(6) { animation-delay: 0.6s; }
-.feature-item:nth-child(7) { animation-delay: 0.7s; }
-.feature-item:nth-child(8) { animation-delay: 0.8s; }
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsividade para a seção de funcionalidades */
-@media (max-width: 768px) {
-    .features-section h2 {
-        font-size: 2rem;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .feature-item {
-        padding: 1.5rem;
-    }
-    
-    .feature-icon {
-        font-size: 2.5rem;
-    }
-}
-
-
-/* Melhorias para Hero Section */
 .hero-section {
     text-align: center;
     padding: 4rem 0;
@@ -1039,259 +271,370 @@ footer {
     to { transform: translateX(-200px); }
 }
 
-/* Responsividade melhorada para Hero */
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-section p {
-        font-size: 1.1rem;
-        padding: 0 1rem;
-    }
-    
-    .btn {
-        padding: 0.8rem 1.5rem;
-        margin: 0.5rem;
-        display: block;
-        max-width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .hero-image-placeholder {
-        margin-top: 2rem;
-        padding: 0 1rem;
-    }
-}
-
-
-/* Destaque especial para o Instagram no footer */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.social-icons a {
+/* Benefits Section */
+.benefits-section {
+    background: linear-gradient(135deg, #FFFFFF 0%, #ECF0F1 100%);
+    padding: 4rem 0;
     position: relative;
-    display: inline-block;
-    padding: 1rem;
-    background: linear-gradient(45deg, #E1306C, #F56040, #FCAF45);
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(225, 48, 108, 0.3);
-    animation: pulse 2s ease-in-out infinite;
+    overflow: hidden;
 }
 
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 8px 20px rgba(225, 48, 108, 0.3);
-    }
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 12px 30px rgba(225, 48, 108, 0.5);
-    }
-}
-
-.social-icons a::before {
+.benefits-section::before {
     content: '';
     position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: linear-gradient(45deg, #E1306C, #F56040, #FCAF45, #E1306C);
-    border-radius: 23px;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    animation: rotate 3s linear infinite;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23F39C12" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+    pointer-events: none;
 }
 
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+.benefits-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #2C3E50, #3498DB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.social-icons a:hover::before {
-    opacity: 1;
+.benefits-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #7F8C8D;
+    margin-bottom: 2rem;
 }
 
-.social-icons a:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 0 15px 35px rgba(225, 48, 108, 0.6);
-    animation: none;
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.social-icons a img {
-    width: 40px !important;
-    height: 40px !important;
-    border-radius: 10px;
+.benefit-item {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    filter: brightness(1.2) contrast(1.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease forwards;
 }
 
-.social-icons a:hover img {
-    transform: rotate(10deg);
-    filter: brightness(1.4) contrast(1.2);
+.benefit-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(243, 156, 18, 0.1), transparent);
+    transition: left 0.5s ease;
 }
 
-/* Texto especial para Instagram */
-.footer-col h4 {
-    color: #FFFFFF;
+.benefit-item:hover::before {
+    left: 100%;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 1);
+}
+
+.benefit-item .icon-placeholder {
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover .icon-placeholder {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.benefit-item h4 {
+    color: #2C3E50;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.benefit-item:hover h4 {
+    color: #F39C12;
+}
+
+.icon-placeholder img {
+    margin-bottom: 1rem;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* About Section */
+.about-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #ECF0F1 0%, #FFFFFF 100%);
     position: relative;
 }
 
-.footer-col:nth-child(3) h4::after {
-    content: '📸';
-    margin-left: 0.5rem;
-    animation: bounce 2s ease-in-out infinite;
+.about-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #F39C12, #3498DB, #F39C12);
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
+.about-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2C3E50;
+    position: relative;
 }
 
-/* Responsividade para o Instagram destacado */
-@media (max-width: 768px) {
-    .social-icons a {
-        padding: 0.8rem;
-    }
-    
-    .social-icons a img {
-        width: 35px !important;
-        height: 35px !important;
-    }
+.about-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #F39C12, #3498DB);
+    border-radius: 2px;
 }
 
-
-/* Redução de espaçamentos entre seções - CORRIGIDO */
-.hero-section {
-    padding-bottom: 0.5rem; /* Reduzido ainda mais para diminuir o espaço abaixo da hero */
+.about-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #7F8C8D;
+    margin-bottom: 2rem;
+    font-style: italic;
 }
 
-.benefits-section { /* Corresponde a 'Por que Cápsula?' */
-    padding-top: 1.5rem; /* Reduzido para diminuir o espaço acima */
-    padding-bottom: 1.5rem;
-    margin-top: 0; 
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
-.about-section { /* Corresponde a 'O que é o Cápsula?' */
-    padding-top: 1rem; /* REDUZIDO SIGNIFICATIVAMENTE para corrigir o excesso de espaço */
-    padding-bottom: 1.5rem;
-    margin-top: 0; 
+.about-section p::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    color: #F39C12;
+    opacity: 0.3;
+    font-family: serif;
 }
 
+.about-section p::after {
+    content: '"';
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    font-size: 4rem;
+    color: #3498DB;
+    opacity: 0.3;
+    font-family: serif;
+}
+
+.about-section strong {
+    color: #F39C12;
+    font-weight: 700;
+    padding: 2px 4px;
+    border-radius: 3px;
+    background: rgba(243, 156, 18, 0.1);
+}
+
+/* How It Works Section */
 .how-it-works-section {
-    padding-top: 1.5rem; /* Ajustado */
-    padding-bottom: 1.5rem;
-    margin-top: 0; 
+    background-color: #FFFFFF;
+    padding: 4rem 0;
 }
 
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step-item {
+    text-align: center;
+}
+
+
+/* Features Section */
 .features-section {
-    padding-top: 1.5rem; /* Ajustado */
-    padding-bottom: 1.5rem;
-    margin-top: 0; 
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+    color: #FFFFFF;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.testimonials-section {
-    padding-top: 1.5rem; /* Ajustado */
-    padding-bottom: 1.5rem;
-    margin-top: 0; 
+.features-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23F39C12" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>') repeat;
+    pointer-events: none;
 }
 
-.cta-section {
-    padding-top: 1.5rem; /* Ajustado */
-    padding-bottom: 1.5rem;
-    margin-top: 0; 
-}
-
-/* Ajustes específicos para melhor fluxo visual */
-/* Removendo margens entre seções e adicionando margens negativas para aproximar */
-.hero-section + section,
-section + section {
-    margin-top: -0.5rem; /* Margem negativa para aproximar as seções */
-}
-
-/* Ajuste específico para o espaço entre a imagem hero e a próxima seção */
-.hero-image-placeholder {
-    margin-bottom: 0.5rem; /* Reduzido para diminuir o espaço */
-    margin-top: 1.5rem; /* Reduzido também o espaço acima da imagem */
-}
-
-/* Correção específica para evitar sobreposições */
-.benefits-section,
-.about-section,
-.how-it-works-section,
-.features-section,
-.testimonials-section,
-.cta-section {
+.features-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
     position: relative;
     z-index: 1;
 }
 
-/* Responsividade para espaçamentos */
-@media (max-width: 768px) {
-    .hero-section {
-        padding-bottom: 0.25rem;
+.features-section h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ECF0F1;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    opacity: 0; /* Para a animação */
+    animation: slideInUp 0.6s ease forwards;
+}
+
+.feature-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(243, 156, 18, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.feature-item:hover::before {
+    left: 100%;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #F39C12;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-item:hover .feature-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.feature-item h4 {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.feature-item:hover h4 {
+    color: #F39C12;
+}
+
+.feature-item p {
+    color: #ECF0F1;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* Animações escalonadas para os itens */
+.benefit-item:nth-child(1) { animation-delay: 0.1s; }
+.benefit-item:nth-child(2) { animation-delay: 0.2s; }
+.benefit-item:nth-child(3) { animation-delay: 0.3s; }
+
+.feature-item:nth-child(1) { animation-delay: 0.1s; }
+.feature-item:nth-child(2) { animation-delay: 0.2s; }
+.feature-item:nth-child(3) { animation-delay: 0.3s; }
+.feature-item:nth-child(4) { animation-delay: 0.4s; }
+.feature-item:nth-child(5) { animation-delay: 0.5s; }
+.feature-item:nth-child(6) { animation-delay: 0.6s; }
+.feature-item:nth-child(7) { animation-delay: 0.7s; }
+.feature-item:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-    
-    .benefits-section,
-    .how-it-works-section,
-    .features-section,
-    .testimonials-section,
-    .cta-section {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    
-    .about-section {
-        padding-top: 0.75rem; /* Ainda menor no mobile */
-        padding-bottom: 1rem;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
     }
-    
-    .hero-image-placeholder {
-        margin-bottom: 0.25rem;
-        margin-top: 1rem;
-    }
-    
-    .hero-section + section,
-    section + section {
-        margin-top: -0.25rem;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 
-/* Estilos para a logo no navbar */
-.navbar-logo {
-    height: 1.2em; /* Ajuste conforme a altura do texto 'Cápsula' */
-    vertical-align: middle;
-    margin-right: 0.5rem;
-}
-
-/* Ajuste do espaçamento entre o navbar e o texto principal */
-.hero-section {
-    padding-top: 2rem; /* Reduz o padding superior da seção hero */
-}
-
-/* Ajuste do espaçamento do h1 dentro da seção hero */
-.hero-section h1 {
-    margin-top: 1rem; /* Reduz a margem superior do h1 */
-}
-
-
-/* Seção: Planos de Assinatura */
+/* Pricing Section */
 .pricing-section {
     padding: 4rem 0;
     background-color: #ECF0F1;
@@ -1397,121 +740,517 @@ section + section {
     width: 80%;
 }
 
-@media (max-width: 768px) {
-    .pricing-section h2 {
-        font-size: 2rem;
-    }
-    .pricing-section h3 {
-        font-size: 1.2rem;
-    }
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-    .pricing-item {
-        padding: 2rem;
-    }
-    .pricing-item h4 {
-        font-size: 1.5rem;
-    }
-    .pricing-item .price {
-        font-size: 2.5rem;
-    }
-    .pricing-item .price span {
-        font-size: 1rem;
-    }
-    .pricing-item ul li {
-        font-size: 1rem;
-    }
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 4rem 0; /* Padding da seção geral de depoimentos */
 }
 
-/* Ajustes para as setas de navegação do Swiper */
-.swiper-button-prev,
-.swiper-button-next {
-    color: #FFFFFF; /* Cor das setas, ajuste se precisar */
-    /* Posiciona as setas verticalmente centralizadas */
-    top: 50%;
-    transform: translateY(-50%);
-    /* Aumenta o tamanho para melhor clique */
-    width: 44px; /* Largura padrão */
-    height: 44px; /* Altura padrão */
-    /* Garante que fiquem acima do conteúdo */
-    z-index: 10;
+/* NOVO: Container para o Grid de Depoimentos */
+.testimonials-grid-container {
+    display: grid;
+    /* Define o layout de colunas responsivo:
+       - auto-fit: Preenche o espaço disponível com o máximo de colunas possível.
+       - minmax(300px, 1fr): Cada coluna terá no mínimo 300px e no máximo 1 fração do espaço disponível.
+         Ajuste 300px conforme a largura mínima desejada para cada depoimento. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Espaçamento entre os depoimentos */
+    padding: 20px; /* Um padding geral para o grid */
+    box-sizing: border-box; /* Garante que padding não adicione largura extra */
+    margin: 2rem auto; /* Centraliza o grid */
+    max-width: 1440px; /* Alinhando com o container principal */
 }
 
-/* Ajusta a posição lateral para ficarem mais visíveis */
-.swiper-button-prev {
-    left: 10px; /* Distância da borda esquerda */
+/* Estilo para cada item de depoimento (card) */
+.testimonial-item {
+    display: flex;
+    flex-direction: column; /* Conteúdo interno (citação e autor) empilhado */
+    justify-content: space-between; /* Empurra o autor para o fundo do card */
+
+    padding: 25px; /* Padding interno do card */
+    background-color: #fff;
+    border-radius: 12px; /* Cantos arredondados */
+    border-left: 5px solid #F39C12; /* Adicionado borda lateral */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left; /* Alinha o texto à esquerda (ou center se preferir) */
+    height: 100%; /* Garante que o item ocupe 100% da sua célula no grid, para igualar alturas */
+    box-sizing: border-box; /* Garante que padding não adicione altura extra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para hover */
 }
 
-.swiper-button-next {
-    right: 10px; /* Distância da borda direita */
+.testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Opcional: Estilize os ícones das setas se não estiverem aparecendo bem */
-/* .swiper-button-prev::after,
-.swiper-button-next::after {
-    font-size: 24px; // Tamanho do ícone
-} */
-
-/* Ajusta o padding do container para dar espaço às setas */
-.testimonials-carousel-container {
-    padding: 0 50px; /* Adiciona padding lateral para que as setas não fiquem sobre o conteúdo */
-    position: relative; /* Garante que as setas absolutas fiquem dentro deste container */
+/* Estilo para a citação (texto do depoimento) */
+.testimonial-item .quote {
+    flex-grow: 1; /* Permite que a citação ocupe o máximo de espaço disponível */
+    margin-bottom: 20px; /* Espaço entre a citação e as informações do autor */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #2C3E50;
+    font-style: italic;
 }
 
-/* Para telas menores (mobile), as setas podem ficar mais próximas */
-@media (max-width: 767px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: 30px;
-        height: 30px;
-    }
-    .swiper-button-prev {
-        left: 5px;
-    }
-    .swiper-button-next {
-        right: 5px;
-    }
-    .testimonials-carousel-container {
-        padding: 0 35px; /* Menor padding para mobile */
-    }
+/* Estilo para as informações do autor (substitui .credit) */
+.testimonial-item .author-info {
+    font-weight: 700; /* Negrito para o nome */
+    color: #7F8C8D; /* Cor para o texto do autor */
+    font-size: 0.9rem;
+    text-align: right; /* Alinha as informações do autor à direita */
 }
 
-/* Garante que os slides ocupem a altura total e alinha o conteúdo */
-.swiper-slide {
-    height: auto; /* Deixa o Swiper controlar a altura base, mas permite que o conteúdo se ajuste */
-    display: flex; /* Transforma o slide em um container flexível */
-    flex-direction: column; /* Organiza os itens em coluna (topo para baixo) */
-    /* Remove padding lateral para evitar quebra de layout com spaceBetween */
+.testimonial-item .author-info .name {
+    color: #2C3E50; /* Cor mais escura para o nome do autor */
+}
+
+.testimonial-item .author-info .age {
+    font-weight: normal; /* Idade normal */
+    color: #7F8C8D; /* Mesma cor do resto do texto do autor */
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.cta-section h2 {
+    color: #FFFFFF;
+}
+
+.cta-section p {
+    color: #ECF0F1;
+}
+
+/* Footer */
+footer {
+    background-color: #34495E;
+    color: #ECF0F1;
+    padding: 3rem 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-col .logo {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-col h4 {
+    color: #FFFFFF;
+}
+
+.footer-col ul {
+    list-style: none;
     padding: 0;
 }
 
-/* Aplica flexbox ao item de depoimento para que o conteúdo se estique */
-.testimonial-item {
-    height: 100%; /* Garante que o item ocupe toda a altura do swiper-slide */
+.footer-col a {
+    color: #ECF0F1;
+    text-decoration: none;
+}
+
+/* Destaque especial para o Instagram no footer */
+.social-icons {
     display: flex;
-    flex-direction: column; /* Conteúdo em coluna */
-    justify-content: space-between; /* Empurra o crédito para o final do card */
-    padding: 20px; /* Adicione o padding que você já tinha ou deseja para o card */
-    background-color: #fff; /* Exemplo de cor de fundo do card */
-    border-radius: 8px; /* Exemplo de bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Exemplo de sombra */
-
-    /* ALTURA MÍNIMA PARA GARANTIR UNIFORMIDADE */
-    min-height: 250px; /* Aumente este valor se os depoimentos menores ainda parecerem muito pequenos. Ajuste conforme necessário. */
-    box-sizing: border-box; /* Garante que padding não adicione altura extra inesperada */
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
 
-/* Garante que o texto da citação ocupe o espaço necessário e empurre o crédito para baixo */
-.testimonial-item .quote {
-    flex-grow: 1; /* Permite que o texto da citação ocupe o máximo de espaço possível */
-    margin-bottom: 15px; /* Espaço entre a citação e o crédito */
-    /* Outros estilos para a citação, se houver */
+.social-icons a {
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    background: linear-gradient(45deg, #E1306C, #F56040, #FCAF45);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(225, 48, 108, 0.3);
+    animation: pulse 2s ease-in-out infinite;
 }
 
-/* Media Query para MOBILE: Ajuste a altura mínima se precisar de um valor diferente em telas pequenas */
-@media (max-width: 767px) {
-    .testimonial-item {
-        min-height: 220px; /* Pode ser um pouco menor no mobile se necessário, ou mantenha o mesmo */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(225, 48, 108, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 12px 30px rgba(225, 48, 108, 0.5);
+    }
+}
+
+.social-icons a::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #E1306C, #F56040, #FCAF45, #E1306C);
+    border-radius: 23px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.social-icons a:hover::before {
+    opacity: 1;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 15px 35px rgba(225, 48, 108, 0.6);
+    animation: none;
+}
+
+.social-icons a img {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    filter: brightness(1.2) contrast(1.1);
+}
+
+.social-icons a:hover img {
+    transform: rotate(10deg);
+    filter: brightness(1.4) contrast(1.2);
+}
+
+/* Texto especial para Instagram */
+.footer-col h4 {
+    color: #FFFFFF;
+    position: relative;
+}
+
+.footer-col:nth-child(3) h4::after {
+    content: '📸';
+    margin-left: 0.5rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #7F8C8D;
+    padding-top: 1rem;
+}
+
+/* Hide the hamburger button on larger screens */
+.hamburger-button {
+    display: none;
+}
+
+/* Legal Page styles */
+.legal-page {
+    padding: 4rem 0;
+    background-color: #FFFFFF;
+}
+
+.legal-page h1 {
+    color: #2C3E50;
+    margin-bottom: 1rem;
+}
+
+.legal-page h2 {
+    color: #2C3E50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #F39C12;
+    padding-bottom: 0.5rem;
+}
+
+.legal-page h3 {
+    color: #34495E;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.legal-page .last-updated {
+    color: #7F8C8D;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.legal-page ul {
+    margin-left: 1.5rem;
+}
+
+.legal-page li {
+    margin-bottom: 0.5rem;
+}
+
+/* GLOBAL SPACING ADJUSTMENTS - GARANTE FLUXO VISUAL */
+.hero-section {
+    padding-bottom: 0.5rem;
+    padding-top: 2rem; /* Reduz o padding superior da seção hero */
+}
+.hero-section h1 {
+    margin-top: 1rem; /* Reduz a margem superior do h1 */
+}
+
+.benefits-section,
+.about-section,
+.how-it-works-section,
+.features-section,
+.testimonials-section,
+.cta-section,
+.pricing-section { /* Adicionado pricing-section aqui */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 0; 
+    position: relative; /* Para z-index */
+    z-index: 1; /* Para evitar sobreposições */
+}
+
+/* Ajustes específicos para o espaço entre a imagem hero e a próxima seção */
+.hero-image-placeholder {
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Removendo margens entre seções e adicionando margens negativas para aproximar */
+.hero-section + section,
+section + section {
+    margin-top: -0.5rem;
+}
+
+
+/* --- RESPONSIVIDADE GERAL --- */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1rem 0; /* Ajuste padding do container para mobile */
+    }
+
+    /* Navbar/Hamburger related styles */
+    nav {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+        border-top: 1px solid #E0E0E0;
+        z-index: 999; 
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    nav ul a {
+        display: block; 
+        padding: 0.8rem 1rem;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    nav ul a:hover {
+        background-color: #F8F8F8;
+    }
+
+    .hamburger-button {
+        display: block; 
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        position: relative; 
+        z-index: 1001; 
+        width: 40px; 
+        height: 40px; 
+    }
+
+    .hamburger-icon,
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #2C3E50; 
+        transition: all 0.3s ease;
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+
+    .hamburger-icon {
+        top: 50%;
+        transform: translate(-50%, -50%); 
+    }
+
+    .hamburger-icon::before {
+        top: 0; 
+        transform: translateY(-8px) translateX(-50%); 
+    }
+
+    .hamburger-icon::after {
+        bottom: 0; 
+        transform: translateY(8px) translateX(-50%); 
+    }
+
+    .hamburger-button.active .hamburger-icon {
+        background-color: transparent; 
+    }
+
+    .hamburger-button.active .hamburger-icon::before {
+        transform: translateY(0) translateX(-50%) rotate(45deg);
+    }
+
+    .hamburger-button.active .hamburger-icon::after {
+        transform: translateY(0) translateX(-50%) rotate(-45deg);
+    }
+
+    /* Hero Section Responsividade */
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        margin: 0.5rem;
+        display: block;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-image-placeholder {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    /* Section Headings Responsividade */
+    .benefits-section h2,
+    .about-section h2,
+    .features-section h2,
+    .pricing-section h2,
+    .testimonials-section h2 { /* Adicionado testimonials-section h2 */
+        font-size: 2rem;
+    }
+    
+    .benefits-section h3,
+    .features-section h3,
+    .pricing-section h3,
+    .testimonials-section h3 { /* Adicionado testimonials-section h3 */
+        font-size: 1.2rem;
+    }
+    
+    /* Benefits/About/Features Items Responsividade */
+    .benefit-item,
+    .feature-item,
+    .pricing-item {
+        padding: 1.5rem;
+    }
+    .about-section p {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+
+    /* Grid Layouts Responsividade */
+    .benefits-grid,
+    .steps-grid,
+    .features-grid,
+    .pricing-grid,
+    .footer-grid {
+        grid-template-columns: 1fr; /* Força uma coluna em mobile */
+    }
+    
+    /* NOVO: Grid de Depoimentos em Mobile */
+    .testimonials-grid-container {
+        grid-template-columns: 1fr; /* Apenas 1 coluna em telas menores */
+        gap: 20px; /* Menor espaçamento */
+        padding: 15px;
+    }
+    
+    /* Espaçamentos entre seções em mobile */
+    .hero-section {
+        padding-bottom: 0.25rem;
+    }
+    
+    .benefits-section,
+    .how-it-works-section,
+    .features-section,
+    .testimonials-section,
+    .cta-section,
+    .pricing-section { /* Adicionado pricing-section */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .about-section {
+        padding-top: 0.75rem; /* Ajuste fino */
+        padding-bottom: 1rem;
+    }
+    
+    .hero-image-placeholder {
+        margin-bottom: 0.25rem;
+        margin-top: 1rem;
+    }
+    
+    .hero-section + section,
+    section + section {
+        margin-top: -0.25rem;
+    }
+
+    /* Responsividade para o Instagram destacado */
+    .social-icons a {
+        padding: 0.8rem;
+    }
+    
+    .social-icons a img {
+        width: 35px !important;
+        height: 35px !important;
     }
 }

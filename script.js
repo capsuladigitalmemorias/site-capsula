@@ -20,36 +20,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
-    // --- Lógica do Carrossel Swiper ---
-    const swiper = new Swiper('.swiper', {
-        // Parâmetros opcionais (ajuste conforme sua necessidade)
-        loop: true, // Para o carrossel ser infinito
-
-        // Se precisar de paginação (as bolinhas)
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-
-        // Se precisar de setas de navegação
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // Configurações responsivas (ajustar quantos slides aparecem)
-        breakpoints: {
-            // Quando a largura da tela for >= 768px
-            768: {
-                slidesPerView: 2, // Exemplo: 2 depoimentos por vez em telas maiores
-                spaceBetween: 30,
-            },
-            // Quando a largura da tela for < 768px (mobile)
-            0: { // Começa do 0px
-                slidesPerView: 1, // Exemplo: 1 depoimento por vez no mobile
-                spaceBetween: 10,
-            }
-        }
-    });
 });
