@@ -6,6 +6,7 @@
     <title>Cápsula - Suas memórias vivas para sempre.</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -211,45 +212,57 @@
                 <h2>Quem já criou suas cápsulas e guardou suas memórias, recomenda.</h2>
                 <h3>Veja o que nossos usuários estão dizendo sobre o Cápsula.</h3>
                 <div class="testimonials-carousel-container">
-                    <div class="testimonials-carousel">
-                        <div class="testimonial-item">
-                            <p class="quote">"Guardei a voz da minha avó contando histórias. Agora, posso ouvi-la sempre que bater saudade."</p>
-                            <p class="credit">Ana Paula G., 34 anos, Designer - Belo Horizonte, MG.</p>
+                    <!-- INÍCIO DA ESTRUTURA SWIPER -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Cada testimonial-item se torna um swiper-slide -->
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"Guardei a voz da minha avó contando histórias. Agora, posso ouvi-la sempre que bater saudade."</p>
+                                <p class="credit">Ana Paula G., 34 anos, Designer - Belo Horizonte, MG.</p>
+                            </div>
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"O Cápsula transformou meu diário em um verdadeiro tesouro emocional."</p>
+                                <p class="credit">João Marcelo S., 28 anos, Escritor - São Paulo, SP.</p>
+                            </div>
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"Consegui preservar os primeiros passos do meu filho. Que emoção rever esses momentos!"</p>
+                                <p class="credit">Mariana L., 29 anos, Enfermeira - Rio de Janeiro, RJ.</p>
+                            </div>
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"Uso o Cápsula para guardar as receitas da minha mãe com a voz dela explicando. É como se ela estivesse sempre comigo na cozinha."</p>
+                                <p class="credit">Carlos Eduardo M., 42 anos, Chef - Salvador, BA.</p>
+                            </div>
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"Criei uma cápsula para cada viagem que fiz. Agora posso reviver cada aventura com todos os detalhes."</p>
+                                <p class="credit">Fernanda R., 31 anos, Fotógrafa - Curitiba, PR.</p>
+                            </div>
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"O Cápsula me ajudou a superar um momento difícil. Reler minhas próprias palavras de força me deu coragem."</p>
+                                <p class="credit">Roberto Silva, 38 anos, Professor - Recife, PE.</p>
+                            </div>
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"Meus netos adoram ouvir as histórias que gravei sobre a nossa família. É um legado que vai passar de geração em geração."</p>
+                                <p class="credit">Dona Maria C., 67 anos, Aposentada - Fortaleza, CE.</p>
+                            </div>
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"Cada conquista profissional está registrada no Cápsula. É incrível ver minha evolução ao longo dos anos."</p>
+                                <p class="credit">Thiago A., 33 anos, Engenheiro - Brasília, DF.</p>
+                            </div>
+                            <div class="swiper-slide testimonial-item">
+                                <p class="quote">"O Cápsula me conecta com minhas emoções de uma forma única. Cada memória guardada é um presente para mí mesma."</p>
+                                <p class="credit">Juliana P., 26 anos, Psicóloga - Porto Alegre, RS.</p>
+                            </div>
                         </div>
-                        <div class="testimonial-item">
-                            <p class="quote">"O Cápsula transformou meu diário em um verdadeiro tesouro emocional."</p>
-                            <p class="credit">João Marcelo S., 28 anos, Escritor - São Paulo, SP.</p>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="quote">"Consegui preservar os primeiros passos do meu filho. Que emoção rever esses momentos!"</p>
-                            <p class="credit">Mariana L., 29 anos, Enfermeira - Rio de Janeiro, RJ.</p>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="quote">"Uso o Cápsula para guardar as receitas da minha mãe com a voz dela explicando. É como se ela estivesse sempre comigo na cozinha."</p>
-                            <p class="credit">Carlos Eduardo M., 42 anos, Chef - Salvador, BA.</p>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="quote">"Criei uma cápsula para cada viagem que fiz. Agora posso reviver cada aventura com todos os detalhes."</p>
-                            <p class="credit">Fernanda R., 31 anos, Fotógrafa - Curitiba, PR.</p>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="quote">"O Cápsula me ajudou a superar um momento difícil. Reler minhas próprias palavras de força me deu coragem."</p>
-                            <p class="credit">Roberto Silva, 38 anos, Professor - Recife, PE.</p>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="quote">"Meus netos adoram ouvir as histórias que gravei sobre a nossa família. É um legado que vai passar de geração em geração."</p>
-                            <p class="credit">Dona Maria C., 67 anos, Aposentada - Fortaleza, CE.</p>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="quote">"Cada conquista profissional está registrada no Cápsula. É incrível ver minha evolução ao longo dos anos."</p>
-                            <p class="credit">Thiago A., 33 anos, Engenheiro - Brasília, DF.</p>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="quote">"O Cápsula me conecta com minhas emoções de uma forma única. Cada memória guardada é um presente para mí mesma."</p>
-                            <p class="credit">Juliana P., 26 anos, Psicóloga - Porto Alegre, RS.</p>
-                        </div>
+                        <!-- Adicione as setas de navegação (opcional) -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <!-- Adicione a paginação (bolinhas - opcional) -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="carousel-controls">
+                    <!-- FIM DA ESTRUTURA SWIPER -->
+
+                    <!-- SEUS CONTROLES ANTIGOS (AGORA COMENTADOS/REMOCIDOS, POIS O SWIPER OS SUBSTITUI) -->
+                    <!-- <div class="carousel-controls">
                         <button class="carousel-btn prev-btn" onclick="previousTestimonial()">&lt;</button>
                         <button class="carousel-btn next-btn" onclick="nextTestimonial()">&gt;</button>
                     </div>
@@ -263,7 +276,7 @@
                         <span class="indicator" onclick="currentTestimonial(7)"></span>
                         <span class="indicator" onclick="currentTestimonial(8)"></span>
                         <span class="indicator" onclick="currentTestimonial(9)"></span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -299,7 +312,7 @@
                     <div class="contact-info">
                         <p><strong>📧 E-mail:</strong><br>
                         <a href="mailto:contato@capsuladigital.com.br">contato@capsuladigital.com.br</a></p>
-                        
+
                         <p><strong>💬 WhatsApp:</strong><br>
                         <a href="https://wa.me/5511984472334" target="_blank">(11) 98447-2334</a></p>
                     </div>
@@ -328,7 +341,10 @@
             </div>
         </div>
     </footer>
-    <script src="carousel.js"></script>
-    <script src="script.js"></script> <!-- NOVO: Adicionado link para o seu script.js -->
+
+    <!-- A ordem dos scripts é importante: primeiro a biblioteca, depois o seu código que a usa -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script> <!-- Seu script principal agora carregado após o Swiper -->
+
 </body>
 </html>
