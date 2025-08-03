@@ -1423,3 +1423,89 @@ section + section {
         font-size: 1rem;
     }
 }
+
+/* Ajustes para as setas de navegação do Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #000; /* Cor das setas, ajuste se precisar */
+    /* Posiciona as setas verticalmente centralizadas */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Aumenta o tamanho para melhor clique */
+    width: 44px; /* Largura padrão */
+    height: 44px; /* Altura padrão */
+    /* Garante que fiquem acima do conteúdo */
+    z-index: 10;
+}
+
+/* Ajusta a posição lateral para ficarem mais visíveis */
+.swiper-button-prev {
+    left: 10px; /* Distância da borda esquerda */
+}
+
+.swiper-button-next {
+    right: 10px; /* Distância da borda direita */
+}
+
+/* Opcional: Estilize os ícones das setas se não estiverem aparecendo bem */
+/* .swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px; // Tamanho do ícone
+} */
+
+/* Ajusta o padding do container para dar espaço às setas */
+.testimonials-carousel-container {
+    padding: 0 50px; /* Adiciona padding lateral para que as setas não fiquem sobre o conteúdo */
+    position: relative; /* Garante que as setas absolutas fiquem dentro deste container */
+}
+
+/* Para telas menores (mobile), as setas podem ficar mais próximas */
+@media (max-width: 767px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+    .swiper-button-prev {
+        left: 5px;
+    }
+    .swiper-button-next {
+        right: 5px;
+    }
+    .testimonials-carousel-container {
+        padding: 0 35px; /* Menor padding para mobile */
+    }
+}
+
+/* Garante que os slides ocupem a altura total e alinha o conteúdo */
+.swiper-slide {
+    height: auto; /* Deixa o Swiper controlar a altura base, mas permite que o conteúdo se ajuste */
+    display: flex; /* Transforma o slide em um container flexível */
+    flex-direction: column; /* Organiza os itens em coluna (topo para baixo) */
+    /* Remove padding lateral para evitar quebra de layout com spaceBetween */
+    padding: 0;
+}
+
+/* Aplica flexbox ao item de depoimento para que o conteúdo se estique */
+.testimonial-item {
+    height: 100%; /* Garante que o item ocupe toda a altura do swiper-slide */
+    display: flex;
+    flex-direction: column; /* Conteúdo em coluna */
+    justify-content: space-between; /* Empurra o crédito para o final do card */
+    padding: 20px; /* Adicione o padding que você já tinha ou deseja para o card */
+    background-color: #fff; /* Exemplo de cor de fundo do card */
+    border-radius: 8px; /* Exemplo de bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Exemplo de sombra */
+}
+
+/* Opcional: Se precisar de um min-height para os cards */
+.testimonial-item {
+    min-height: 200px; /* Ajuste este valor conforme o menor depoimento para garantir uma altura mínima */
+}
+
+/* Ajusta o posicionamento do texto de citação */
+.testimonial-item .quote {
+    flex-grow: 1; /* Permite que o texto da citação ocupe o máximo de espaço possível */
+    margin-bottom: 15px; /* Espaço entre a citação e o crédito */
+    /* Outros estilos para a citação */
+}
