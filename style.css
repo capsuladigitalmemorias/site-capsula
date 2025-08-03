@@ -1427,7 +1427,7 @@ section + section {
 /* Ajustes para as setas de navegação do Swiper */
 .swiper-button-prev,
 .swiper-button-next {
-    color: #000; /* Cor das setas, ajuste se precisar */
+    color: #FFFFFF; /* Cor das setas, ajuste se precisar */
     /* Posiciona as setas verticalmente centralizadas */
     top: 50%;
     transform: translateY(-50%);
@@ -1496,16 +1496,22 @@ section + section {
     background-color: #fff; /* Exemplo de cor de fundo do card */
     border-radius: 8px; /* Exemplo de bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Exemplo de sombra */
+
+    /* ALTURA MÍNIMA PARA GARANTIR UNIFORMIDADE */
+    min-height: 250px; /* Aumente este valor se os depoimentos menores ainda parecerem muito pequenos. Ajuste conforme necessário. */
+    box-sizing: border-box; /* Garante que padding não adicione altura extra inesperada */
 }
 
-/* Opcional: Se precisar de um min-height para os cards */
-.testimonial-item {
-    min-height: 200px; /* Ajuste este valor conforme o menor depoimento para garantir uma altura mínima */
-}
-
-/* Ajusta o posicionamento do texto de citação */
+/* Garante que o texto da citação ocupe o espaço necessário e empurre o crédito para baixo */
 .testimonial-item .quote {
     flex-grow: 1; /* Permite que o texto da citação ocupe o máximo de espaço possível */
     margin-bottom: 15px; /* Espaço entre a citação e o crédito */
-    /* Outros estilos para a citação */
+    /* Outros estilos para a citação, se houver */
+}
+
+/* Media Query para MOBILE: Ajuste a altura mínima se precisar de um valor diferente em telas pequenas */
+@media (max-width: 767px) {
+    .testimonial-item {
+        min-height: 220px; /* Pode ser um pouco menor no mobile se necessário, ou mantenha o mesmo */
+    }
 }
