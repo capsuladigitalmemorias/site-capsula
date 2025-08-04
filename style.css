@@ -69,7 +69,7 @@ nav a {
 /* Hero Section */
 .hero-section {
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: linear-gradient(135deg, #ECF0F1 0%, #FFFFFF 50%, #ECF0F1 100%);
     position: relative;
     overflow: hidden;
@@ -274,7 +274,7 @@ nav a {
 /* Benefits Section */
 .benefits-section {
     background: linear-gradient(135deg, #FFFFFF 0%, #ECF0F1 100%);
-    padding: 4rem 0;
+    padding: 2rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -376,7 +376,7 @@ nav a {
 
 /* About Section */
 .about-section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: linear-gradient(135deg, #ECF0F1 0%, #FFFFFF 100%);
     position: relative;
 }
@@ -466,7 +466,7 @@ nav a {
 /* How It Works Section */
 .how-it-works-section {
     background-color: #FFFFFF;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .steps-grid {
@@ -1022,7 +1022,8 @@ footer {
 .features-section,
 .testimonials-section,
 .cta-section,
-.pricing-section { /* Adicionado pricing-section aqui */
+.pricing-section,
+.faq-section { /* ADICIONADO: faq-section para espaçamento global */
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     margin-top: 0; 
@@ -1173,14 +1174,16 @@ section + section {
     .about-section h2,
     .features-section h2,
     .pricing-section h2,
-    .testimonials-section h2 { /* Adicionado testimonials-section h2 */
+    .testimonials-section h2,
+    .faq-section h2 { /* ADICIONADO: faq-section h2 */
         font-size: 2rem;
     }
     
     .benefits-section h3,
     .features-section h3,
     .pricing-section h3,
-    .testimonials-section h3 { /* Adicionado testimonials-section h3 */
+    .testimonials-section h3,
+    .faq-section h3 { /* ADICIONADO: faq-section h3 */
         font-size: 1.2rem;
     }
     
@@ -1224,7 +1227,8 @@ section + section {
     .features-section,
     .testimonials-section,
     .cta-section,
-    .pricing-section { /* Adicionado pricing-section */
+    .pricing-section,
+    .faq-section { /* ADICIONADO: faq-section */
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -1252,5 +1256,118 @@ section + section {
     .social-icons a img {
         width: 35px !important;
         height: 35px !important;
+    }
+}
+
+/* --- FAQ Section Styles (Adicionado ao final do arquivo) --- */
+.faq-section {
+    padding: 1rem 0;
+    background-color: #F8F8F8; /* Um fundo sutil para destacar a seção */
+}
+
+.faq-section h2,
+.faq-section h3 {
+    text-align: center;
+    color: #2C3E50;
+    margin-bottom: 1.5rem;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+}
+
+.faq-section h3 {
+    font-size: 1.5rem;
+    color: #7F8C8D;
+}
+
+.faq-list {
+    max-width: 100%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.faq-item:last-child {
+    border-bottom: none; /* Remove a borda do último item */
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2C3E50;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #F5F5F5;
+}
+
+.faq-question .icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question .icon {
+    transform: rotate(45deg); /* Gira o '+' para formar um 'x' ou para parecer um '-' */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    background-color: #F9F9F9;
+    padding: 0 2rem; /* Initial padding of 0 */
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px; /* Um valor grande o suficiente para a maioria das respostas */
+    padding: 1.5rem 2rem; /* Padding when active */
+}
+
+.faq-answer p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments for FAQ */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 2rem 0;
+    }
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+    .faq-section h3 {
+        font-size: 1.2rem;
+    }
+    .faq-question {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    .faq-answer {
+        padding: 0 1.5rem;
+    }
+    .faq-item.active .faq-answer {
+        padding: 1rem 1.5rem;
+    }
+    .faq-answer p {
+        font-size: 0.95rem;
     }
 }

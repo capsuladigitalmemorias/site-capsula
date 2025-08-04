@@ -20,4 +20,30 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // --- Lógica do FAQ Accordion ---
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            // Encontra o item FAQ pai (que contém a pergunta e a resposta)
+            const faqItem = question.closest('.faq-item');
+            if (faqItem) {
+                // Alterna a classe 'active' no item pai
+                faqItem.classList.toggle('active');
+
+                // OPCIONAL: Para fechar outras perguntas abertas quando uma nova é clicada
+                // Se você quiser que apenas uma pergunta esteja aberta por vez, descomente o bloco abaixo.
+                // Se quiser permitir múltiplas perguntas abertas, mantenha-o comentado.
+                /*
+                faqQuestions.forEach(otherQuestion => {
+                    const otherFaqItem = otherQuestion.closest('.faq-item');
+                    if (otherFaqItem && otherFaqItem !== faqItem && otherFaqItem.classList.contains('active')) {
+                        otherFaqItem.classList.remove('active');
+                    }
+                });
+                */
+            }
+        });
+    });
 });
